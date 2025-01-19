@@ -1,0 +1,129 @@
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.display-flex {
+  display: flex;
+}
+
+/* header */
+
+header {
+  padding: 50px 120px;
+}
+
+/* navbar */
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin-right: 34px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.nav-search-icon {
+  margin-right: 34px;
+}
+/* hero section */
+
+.hero-section {
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/circle-design.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding: 88px 33px;
+}
+
+.hero-title {
+  font-size: 52px;
+  font-weight: bold;
+  color: #3a3a3a;
+  margin-bottom: 16px;
+}
+
+.hero-des {
+  font-size: 16px;
+  font-weight: 600px;
+  color: #3a3a3a;
+  margin-bottom: 16px;
+}
+
+.hero-buy-btn {
+  padding: 10px 24px;
+  background-color: #e02c6d;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero-cam-img {
+  width: 100%;
+}
+/* main */
+
+main{
+  padding: 20px 160px;
+}
+
+main section{
+  margin: 0 auto;
+}
+.company-contaner{
+  padding: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  border-top: 1px solid #acacac;
+  border-bottom: 1px solid #a0a0a0;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    flex-direction: column-reverse;
+    background-position: top center;
+    background-size: 100%;
+  }
+
+  header {
+    padding: 10px 20px;
+  }
+  nav ul li {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero-title {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+  .hero-des {
+    text-align: center;
+  }
+  .hero-contant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+}
