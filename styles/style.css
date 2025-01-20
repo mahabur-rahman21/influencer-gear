@@ -77,12 +77,9 @@ nav ul li a {
 }
 /* main */
 
-main{
-  padding: 20px 160px;
-}
-
 main section{
   margin: 0 auto;
+  padding: 20px 160px;
 }
 .company-contaner{
   padding: 36px;
@@ -95,11 +92,76 @@ main section{
   border-bottom: 1px solid #a0a0a0;
 }
 
+/* Popular Collection */
+
+.collection-contaner{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  
+}
+
+.collection-card{
+  padding: 18px;
+  background-color: #fff;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.products-title{
+  margin-top: 16px;
+  margin-bottom: 6px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.products-price{
+  font-size: 24px;
+  margin-top: 6px;
+  margin-bottom: 5px;
+  font-weight: normal;
+  
+}
+.products-rating{
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(94, 99, 102, 1);
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+
+.products-des{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color:#787885;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+.products-img{
+  width: 100%;
+}
+
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
   .hero-section {
     flex-direction: column-reverse;
     background-position: top center;
     background-size: 100%;
+  }
+
+
+
+  main section{
+    margin: 0 auto;
+    padding: 10px 10px;
   }
 
   header {
@@ -124,6 +186,14 @@ main section{
     align-items: center;
     flex-direction: column;
   }
+
+  .collection-contaner{
+    
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+    
+  }
+
 
 
 }
